@@ -32,19 +32,12 @@ const Container = styled.ul`
 
 export const SliderItem = styled.li`
   margin-right: 16px;
-  transition: transform 500ms;
   img {
     margin: 16px;
     width: 298px;
     height: 197px;
     object-fit: cover;
   }
-  &:focus, &:hover{
-    transform: scale(1.5);
-    z-index: 1;
-  }
-  }
-
 `;
 
 const Slider = ({ children }) => (

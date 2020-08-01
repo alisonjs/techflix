@@ -1,3 +1,28 @@
-div .slick-list{
+.slick-list{
     overflow: visible;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.slick-slide{
+    transition: transform 500ms;
+    flex: 0 0 auto;
+}
+
+.slick-track:focus-within .slick-slide,
+.slick-track:hover .slick-slide {
+  transform: translateX(-25%);
+}
+
+.slick-slide:focus ~ .slick-slide,
+.slick-slide:hover ~ .slick-slide {
+    transform: translateX(25%);
+}
+
+.slick-track .slick-slide:focus,
+.slick-track .slick-slide:hover {
+  transform: scale(1.5);
+  z-index: 1;
 }

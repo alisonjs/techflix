@@ -4,7 +4,7 @@ export const VideoCardContainer = styled.a`
   border: 2px solid;
   border-radius: 4px;
   text-decoration: none;
-  overflow: visible;
+  overflow: hidden;
   cursor: pointer;
   color: white;
   flex: 0 0 298px;
